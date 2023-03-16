@@ -96,7 +96,7 @@ By default, every OpenShift Cluster is deployed with an application ingress cont
 
 As we'll be using the KubeVirt (OpenShift Virtualisation) provider with HyperShift (Hosted Control Planes), it will by default, create Hosted Clusters with a subdomain of the RHACM Hub cluster.
 
-For example, my RHACM Hub cluster has a default application ingress DNS entry of `*.apps.rhacm-hub.na.cloud.techzone.ibm.com`, which means once I deploy a Hosted Cluster, lets say called `ce-apac`, with the HyperShift KubeVirt provider it will automatically create a subdomain of `*.apps.ce-apac.apps.rhacm-hub.na.cloud.techzone.ibm.com`.
+For example, my RHACM Hub cluster has a default application ingress DNS entry of `*.apps.rhacm-hub.na.cloud.techzone.ibm.com`, which means once I deploy a Hosted Cluster, lets say called `cp4i-hosted`, with the HyperShift KubeVirt provider it will automatically create a subdomain of `*.apps.cp4i-hosted.apps.rhacm-hub.na.cloud.techzone.ibm.com`.
 
 To allow this functionality to happen, we need to `patch` the RHACM Hub Application ingress controller to allow wildcard DNS routes.
 
